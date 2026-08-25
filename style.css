@@ -104,3 +104,6 @@
     .auth-form .link:hover {
       text-decoration: underline;
     }
+#register-form {
+  display: none;
+}
