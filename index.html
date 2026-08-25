@@ -6,13 +6,116 @@
     <title>KikBak Live Streaming</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <!-- Logo Section -->
+
+       <div class="logo">
+        <span>Kik</span>Bak <div class="play-button"></div>
+    </div>
+
+   
+    <div class="auth-form" id="login-form">
+        <h2>Login to KikBak</h2>
+
+        <form action="login.php" method="POST">
+
+            <input 
+                type="text" 
+                name="username" 
+                placeholder="Username" 
+                aria-label="Username"
+                required
+            >
+
+            <input 
+                type="password" 
+                name="password" 
+                placeholder="Password" 
+                aria-label="Password"
+                required
+            >
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p>
+            Don't have an account?
+            <a href="#" class="link" onclick="toggleForm()">Register here</a>
+        </p>
+    </div>
+
+
+   
+    <div class="auth-form" id="register-form">
+        <h2>Register for a KikBak Account</h2>
+
+        <form action="register.php" method="POST">
+
+            <input 
+                type="text" 
+                name="first-name" 
+                placeholder="First name" 
+                aria-label="First name"
+                required
+            >
+
+            <input 
+                type="text" 
+                name="last-name" 
+                placeholder="Last name" 
+                aria-label="Last name"
+                required
+            >
+
+            <input 
+                type="text" 
+                name="username" 
+                placeholder="Username" 
+                aria-label="Username"
+                required
+            >
+
+            <input 
+                type="password" 
+                name="password" 
+                placeholder="Password" 
+                aria-label="Password"
+                required
+            >
+
+            <input 
+                type="password" 
+                name="confirm-password" 
+                placeholder="Confirm password" 
+                aria-label="Confirm password"
+                required
+            >
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p>
+            Already have an account?
+            <a href="#" class="link" onclick="toggleForm()">Login here</a>
+        </p>
+    </div>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KikBak Live Streaming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
   <div class="logo">
     <span>Kik</span>Bak <div class="play-button"></div>
   </div>
 
-  <!-- Registration/Login Form Section -->
+
   <div class="auth-form">
     <h2>Login to KikBak</h2>
     <form action="login.php" method="POST">
